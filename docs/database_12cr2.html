@@ -1,0 +1,635 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>OracleDataBase12c インストール · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索すると入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Title
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="database_12cr2.html">
+            
+                <a href="database_12cr2.html">
+            
+                    
+                    OracleDataBase12c インストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBookで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >OracleDataBase12c インストール</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="oracle-database-r2-&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">Oracle Database R2 &#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h1>
+<p>&#x30DE;&#x30CB;&#x30E5;&#x30A2;&#x30EB;<br><a href="https://docs.oracle.com/cd/E82638_01/index.htm" target="_blank">https://docs.oracle.com/cd/E82638_01/index.htm</a>  </p>
+<p>&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30AC;&#x30A4;&#x30C9;<br><a href="https://docs.oracle.com/cd/E82638_01/LADBI/toc.htm" target="_blank">https://docs.oracle.com/cd/E82638_01/LADBI/toc.htm</a>  </p>
+<h2 id="&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x30B5;&#x30FC;&#x30D0;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30EA;&#x30B9;&#x30C8;">&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x30B5;&#x30FC;&#x30D0;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30EA;&#x30B9;&#x30C8;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x5185;&#x5BB9;</th>
+<th style="text-align:left">&#x30BF;&#x30B9;&#x30AF;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x30C7;&#x30A3;&#x30B9;&#x30D7;&#x30EC;&#x30A4;</td>
+<td style="text-align:left">1024 x 768&#x4EE5;&#x4E0A;&#x306E;&#x30C7;&#x30A3;&#x30B9;&#x30D7;&#x30EC;&#x30A4;&#x89E3;&#x50CF;&#x5EA6;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x6700;&#x5C0F;RAM</td>
+<td style="text-align:left">2GB&#x306E;RAM&#x3092;&#x63A8;&#x5968;&#x3057;&#x307E;&#x3059;&#x3002;<br> Oracle Grid Infrastructure&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x306B;&#x306F;&#x3001;8GB&#x4EE5;&#x4E0A;&#x306E;RAM&#x304C;&#x5FC5;&#x8981;&#x3067;&#x3059;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">Linux x86-64&#x30AA;&#x30DA;&#x30EC;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x30FB;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x306E;&#x8981;&#x4EF6;</td>
+<td style="text-align:left">&#x6B21;&#x306E;Linux x86-64&#x30AB;&#x30FC;&#x30CD;&#x30EB;&#x304C;&#x30B5;&#x30DD;&#x30FC;&#x30C8;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;<br>Oracle Linux 7&#x304A;&#x3088;&#x3073;Unbreakable Enterprise&#x30AB;&#x30FC;&#x30CD;&#x30EB;3: 3.8.13-35.3.1.el7uek.x86_64&#x4EE5;&#x4E0A;<br>Oracle Linux 7.2&#x304A;&#x3088;&#x3073;Unbreakable Enterprise&#x30AB;&#x30FC;&#x30CD;&#x30EB;4: 4.1.12-32.2.3.el7uek.x86_64&#x4EE5;&#x4E0A;<br>Oracle Linux 7&#x304A;&#x3088;&#x3073;Red Hat&#x4E92;&#x63DB;&#x30AB;&#x30FC;&#x30CD;&#x30EB;: 3.10.0-123.el7.x86_64&#x4EE5;&#x4E0A;<br>Red Hat Enterprise Linux 7: 3.10.0-123.el7.x86_64&#x4EE5;&#x4E0A;<br>Oracle Linux 6.4&#x304A;&#x3088;&#x3073;Unbreakable Enterprise&#x30AB;&#x30FC;&#x30CD;&#x30EB;2:2.6.39-400.211.1.el6uek.x86_64&#x4EE5;&#x4E0A;<br>Oracle Linux 6.6&#x304A;&#x3088;&#x3073;Unbreakable Enterprise&#x30AB;&#x30FC;&#x30CD;&#x30EB;3: 3.8.13-44.1.1.el6uek.x86_64&#x4EE5;&#x4E0A;<br>Oracle Linux 6.8&#x304A;&#x3088;&#x3073;Unbreakable Enterprise&#x30AB;&#x30FC;&#x30CD;&#x30EB;4: 4.1.12-37.6.2.el6uek.x86_64&#x4EE5;&#x4E0A;<br>Oracle Linux 6.4&#x304A;&#x3088;&#x3073;Red Hat&#x4E92;&#x63DB;&#x30AB;&#x30FC;&#x30CD;&#x30EB;: 2.6.32-358.el6.x86_64&#x4EE5;&#x4E0A;<br>Red Hat Enterprise Linux 6.4: 2.6.32-358.el6.x86_64&#x4EE5;&#x4E0A;<br>SUSE Linux Enterprise Server 12 SP1: 3.12.49-11.1&#x4EE5;&#x4E0A;<br>&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x6700;&#x5C0F;&#x8981;&#x4EF6;&#x306E;&#x30EA;&#x30B9;&#x30C8;&#x306F;&#x3001;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x8981;&#x4EF6;&#x306B;&#x95A2;&#x3059;&#x308B;&#x9805;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<br></td>
+</tr>
+<tr>
+<td style="text-align:left">/tmp&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;&#x5272;&#x308A;&#x5F53;&#x3066;&#x308B;&#x30C7;&#x30A3;&#x30B9;&#x30AF;&#x9818;&#x57DF;</td>
+<td style="text-align:left">/tmp&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;1GB&#x4EE5;&#x4E0A;&#x306E;&#x9818;&#x57DF;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">RAM&#x306B;&#x5BFE;&#x3057;&#x3066;&#x76F8;&#x5BFE;&#x7684;&#x306A;&#x30B9;&#x30EF;&#x30C3;&#x30D7;&#x9818;&#x57DF;&#x5272;&#x5F53;(Oracle Database)</td>
+<td style="text-align:left">1GB&#x304B;&#x3089;2GB: RAM&#x306E;&#x30B5;&#x30A4;&#x30BA;&#x306E;1.5&#x500D;<br>2GB&#x304B;&#x3089;16GB: RAM&#x306E;&#x30B5;&#x30A4;&#x30BA;&#x306B;&#x7B49;&#x3057;&#x3044;<br>16GB&#x3088;&#x308A;&#x5927;&#x304D;&#x3044;: 16GB<br>&#x6CE8;&#x610F;: Linux&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x3067;HugePages&#x3092;&#x6709;&#x52B9;&#x306B;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x30B9;&#x30EF;&#x30C3;&#x30D7;&#x9818;&#x57DF;&#x3092;&#x8A08;&#x7B97;&#x3059;&#x308B;&#x524D;&#x306B;&#x3001;HugePages&#x306B;&#x5272;&#x308A;&#x5F53;&#x3066;&#x3089;&#x308C;&#x308B;&#x30E1;&#x30E2;&#x30EA;&#x30FC;&#x5206;&#x3092;&#x4F7F;&#x7528;&#x53EF;&#x80FD;&#x306A;RAM&#x304B;&#x3089;&#x5DEE;&#x3057;&#x5F15;&#x304F;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Oracle&#x30A4;&#x30F3;&#x30D9;&#x30F3;&#x30C8;&#x30EA;(oraInventory)&#x304A;&#x3088;&#x3073;OINSTALL&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x8981;&#x4EF6;</strong>  </p>
+<ul>
+<li>&#x30A2;&#x30C3;&#x30D7;&#x30B0;&#x30EC;&#x30FC;&#x30C9;&#x306E;&#x5834;&#x5408;&#x306F;&#x3001;Oracle Universal Installer (OUI)&#x306B;&#x3088;&#x3063;&#x3066;/etc/oraInst.loc&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304B;&#x3089;&#x65E2;&#x5B58;&#x306E;oraInventory&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304C;&#x691C;&#x51FA;&#x3055;&#x308C;&#x3001;&#x65E2;&#x5B58;&#x306E;oraInventory&#x304C;&#x4F7F;&#x7528;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;  </li>
+<li>&#x65B0;&#x898F;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3067;&#x3001;oraInventory&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x69CB;&#x6210;&#x3057;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x3001;Oracle Grid Infrastructure&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x306E;Oracle&#x30D9;&#x30FC;&#x30B9;&#x3088;&#x308A;&#x3082;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x30FB;&#x30EC;&#x30D9;&#x30EB;&#x304C;1&#x3064;&#x4E0A;&#x306E;Oracle&#x30A4;&#x30F3;&#x30D9;&#x30F3;&#x30C8;&#x30EA;&#x304C;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30E9;&#x306B;&#x3088;&#x3063;&#x3066;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x6240;&#x6709;&#x8005;&#x306E;&#x30D7;&#x30E9;&#x30A4;&#x30DE;&#x30EA;&#x30FB;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x304C;Oracle Inventory&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x3068;&#x3057;&#x3066;&#x6307;&#x5B9A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;  </li>
+</ul>
+<p>Oracle&#x30A4;&#x30F3;&#x30D9;&#x30F3;&#x30C8;&#x30EA;&#x30FB;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306F;&#x3001;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x306B;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;Oracle&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x306E;&#x4E2D;&#x592E;&#x30A4;&#x30F3;&#x30D9;&#x30F3;&#x30C8;&#x30EA;&#x3067;&#x3059;&#x3002;&#x30D7;&#x30E9;&#x30A4;&#x30DE;&#x30EA;&#x30FB;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x304C;Oracle Inventory&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x3067;&#x3042;&#x308B;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306F;&#x3001;&#x4E2D;&#x592E;&#x30A4;&#x30F3;&#x30D9;&#x30F3;&#x30C8;&#x30EA;&#x306B;&#x66F8;&#x8FBC;&#x307F;&#x3067;&#x304D;&#x308B;OINSTALL&#x6A29;&#x9650;&#x304C;&#x4ED8;&#x4E0E;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;<br>OINSTALL&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306F;&#x3001;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x4E0A;&#x306E;&#x3059;&#x3079;&#x3066;&#x306E;Oracle&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x30FB;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x6240;&#x6709;&#x8005;&#x306E;&#x30D7;&#x30E9;&#x30A4;&#x30DE;&#x30EA;&#x30FB;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x3067;&#x3042;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;Oracle&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x6240;&#x6709;&#x8005;&#x306B;&#x3088;&#x3063;&#x3066;&#x66F8;&#x8FBC;&#x307F;&#x53EF;&#x80FD;&#x3067;&#x3042;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p><strong>&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x304A;&#x3088;&#x3073;&#x30E6;&#x30FC;&#x30B6;&#x30FC;</strong><br>&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3092;&#x958B;&#x59CB;&#x3059;&#x308B;&#x524D;&#x306B;&#x3001;&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x8A08;&#x753B;&#x306B;&#x5FC5;&#x8981;&#x306A;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x304A;&#x3088;&#x3073;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x30FB;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x304A;&#x85A6;&#x3081;&#x3057;&#x307E;&#x3059;&#x3002;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x6240;&#x6709;&#x8005;&#x306B;&#x306F;&#x3001;&#x30EA;&#x30BD;&#x30FC;&#x30B9;&#x5236;&#x9650;&#x8A2D;&#x5B9A;&#x306A;&#x3069;&#x306E;&#x8981;&#x4EF6;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x304A;&#x3088;&#x3073;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x540D;&#x524D;&#x306B;&#x306F;&#x3001;ASCII&#x6587;&#x5B57;&#x306E;&#x307F;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;  </p>
+<h2 id="x-windows-system-&#x306E;&#x7528;&#x610F;">X windows System &#x306E;&#x7528;&#x610F;</h2>
+<p><strong>&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x5074;</strong>  </p>
+<p>windows&#x7528; X Window Server&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;  </p>
+<p>&#x4F8B;&#xFF09;VcXsrv<br><a href="https://sourceforge.net/projects/vcxsrv/" target="_blank">https://sourceforge.net/projects/vcxsrv/</a>  </p>
+<p><strong>&#x30B5;&#x30FC;&#x30D0;&#x5074;</strong>  </p>
+<pre><code># yum groupinstall &quot;GNOME Desktop&quot;
+# systemctl reboot
+</code></pre><p>&#x78BA;&#x8A8D;  </p>
+<pre><code># firefox &amp;
+</code></pre><p>Windows&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x306E;X Windows Server&#x3067;firefox&#x304C;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;  </p>
+<h2 id="&#x5FC5;&#x8981;&#x306A;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">&#x5FC5;&#x8981;&#x306A;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x9805;&#x76EE;</th>
+<th style="text-align:left">&#x8981;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Red Hat Enterprise Linux7</td>
+<td style="text-align:left">binutils-2.23.52.0.1-12.el7 (x86_64)<br>compat-libcap1-1.10-3.el7 (x86_64)<br>compat-libstdc++-33-3.2.3-71.el7 (i686)<br>compat-libstdc++-33-3.2.3-71.el7 (x86_64)<br>glibc-2.17-36.el7 (i686)<br>glibc-2.17-36.el7 (x86_64)<br>glibc-devel-2.17-36.el7 (i686)<br>glibc-devel-2.17-36.el7 (x86_64)<br>ksh<br>libaio-0.3.109-9.el7 (i686)<br>libaio-0.3.109-9.el7 (x86_64)<br>libaio-devel-0.3.109-9.el7 (i686)<br>libaio-devel-0.3.109-9.el7 (x86_64) <br>libgcc-4.8.2-3.el7 (i686)<br>libgcc-4.8.2-3.el7 (x86_64)<br>libstdc++-4.8.2-3.el7 (i686)<br>libstdc++-4.8.2-3.el7 (x86_64)<br>libstdc++-devel-4.8.2-3.el7 (i686)<br>libstdc++-devel-4.8.2-3.el7 (x86_64)<br>libxcb-1.9-5.el7 (i686)<br>libxcb-1.9-5.el7 (x86_64)<br>libX11-1.6.0-2.1.el7 (i686)<br>libX11-1.6.0-2.1.el7 (x86_64)<br>libXau-1.0.8-2.1.el7 (i686)<br>libXau-1.0.8-2.1.el7 (x86_64)<br>libXi-1.7.2-1.el7 (i686)<br>libXi-1.7.2-1.el7 (x86_64)<br>libXtst-1.2.2-1.el7 (i686)<br>libXtst-1.2.2-1.el7 (x86_64)<br>make-3.82-19.el7 (x86_64)<br>net-tools-2.0-0.17.20131004git.el7 (x86_64)(Oracle RAC&#x304A;&#x3088;&#x3073;Oracle Clusterware&#x7528;)<br>nfs-utils-1.3.0-0.21.el7.x86_64 (Oracle ACFS&#x7528;)<br>smartmontools-6.2-4.el7 (x86_64)<br>sysstat-10.1.5-1.el7 (x86_64)<br>gcc-c++-4.8.2</td>
+</tr>
+</tbody>
+</table>
+<p>i686&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306F;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x540D;&#x306B;&#x6307;&#x5B9A;&#x3057;&#x3066;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;  </p>
+<pre><code># yum compat-libstdc++-33.i686
+</code></pre><h2 id="&#x30AB;&#x30FC;&#x30CD;&#x30EB;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x8ABF;&#x6574;">&#x30AB;&#x30FC;&#x30CD;&#x30EB;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x8ABF;&#x6574;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x30FC;</th>
+<th style="text-align:left">&#x8A2D;&#x5B9A;&#x5024;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">fs.file-max</td>
+<td style="text-align:left">6815744</td>
+</tr>
+<tr>
+<td style="text-align:left">fs.aio-max-nr</td>
+<td style="text-align:left">1048576</td>
+</tr>
+<tr>
+<td style="text-align:left">kernel.sem</td>
+<td style="text-align:left">250 32000 100 128</td>
+</tr>
+<tr>
+<td style="text-align:left">kernel.shmmni</td>
+<td style="text-align:left">4096</td>
+</tr>
+<tr>
+<td style="text-align:left">kernel.shmall</td>
+<td style="text-align:left">1073741824</td>
+</tr>
+<tr>
+<td style="text-align:left">kernel.shmmax</td>
+<td style="text-align:left">4398046511104</td>
+</tr>
+<tr>
+<td style="text-align:left">kernel.panic_on_oops</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">net.core.rmem_default</td>
+<td style="text-align:left">262144</td>
+</tr>
+<tr>
+<td style="text-align:left">net.core.rmem_max</td>
+<td style="text-align:left">4194304</td>
+</tr>
+<tr>
+<td style="text-align:left">net.core.wmem_default</td>
+<td style="text-align:left">262144</td>
+</tr>
+<tr>
+<td style="text-align:left">net.core.wmem_max</td>
+<td style="text-align:left">1048576</td>
+</tr>
+<tr>
+<td style="text-align:left">net.ipv4.conf.all.rp_filter</td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">net.ipv4.conf.default.rp_filter</td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">net.ipv4.ip_local_port_range</td>
+<td style="text-align:left">9000 65500</td>
+</tr>
+</tbody>
+</table>
+<pre><code># vim /etc/sysctl.conf
+fs.file-max = 6815744
+fs.aio-max-nr = 1048576
+kernel.sem = 250 32000 100 128
+kernel.shmmni = 4096
+kernel.shmall = 1073741824
+kernel.shmmax = 4398046511104
+kernel.panic_on_oops = 1
+net.core.rmem_default = 262144
+net.core.rmem_max = 4194304
+net.core.wmem_default = 262144
+net.core.wmem_max = 1048576
+net.ipv4.conf.all.rp_filter = 2
+net.ipv4.conf.default.rp_filter = 2
+net.ipv4.ip_local_port_range = 9000 65500
+</code></pre><h2 id="&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x5236;&#x9650;&#x306E;&#x4E0A;&#x9650;&#x89E3;&#x9664;">&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x5236;&#x9650;&#x306E;&#x4E0A;&#x9650;&#x89E3;&#x9664;</h2>
+<pre><code># vim /etc/security/limits.conf
+@oinstall soft nofile 1024
+@oinstall hard nofile 65536
+@oinstall soft nproc 16384
+@oinstall hard nproc 16384
+@oinstall soft stack 10240
+@oinstall hard stack 32768
+@oinstall soft memlock 134217728
+@oinstall hard memlock 134217728
+</code></pre><h2 id="&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x4F5C;&#x6210;">&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x4F5C;&#x6210;</h2>
+<p><strong>&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x4F5C;&#x6210;</strong>  </p>
+<pre><code># groupadd -g 1100 oinstall
+# groupadd -g 1101 dba
+</code></pre><p><strong>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x4F5C;&#x6210;</strong>  </p>
+<pre><code># useradd -u 1100 oracle -g oinstall -G dba
+# passwd oracle
+oracle
+</code></pre><p>OS&#x306B;&#x5BFE;&#x8C61;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3067;&#x63A5;&#x7D9A;  </p>
+<pre><code>$ vim .bash_profile
+umask 022
+</code></pre><h2 id="hosts-&#x8A2D;&#x5B9A;">hosts &#x8A2D;&#x5B9A;</h2>
+<pre><code># vim /etc/hosts
+10.128.59.110   shmdodb-01
+</code></pre><p>&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x81EA;&#x4F53;&#x3067;ping&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3068;&#x3001;ping&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306B;&#x3088;&#x308A;&#x305D;&#x306E;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x306E;IP&#x30A2;&#x30C9;&#x30EC;&#x30B9;&#x304C;&#x623B;&#x3055;&#x308C;&#x308B;&#x4E8B;&#x3092;&#x78BA;&#x8A8D;  </p>
+<h2 id="&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;">&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;</h2>
+<p><a href="http://www.oracle.com/technetwork/jp/database/enterprise-edition/downloads/index.html" target="_blank">http://www.oracle.com/technetwork/jp/database/enterprise-edition/downloads/index.html</a>  </p>
+<p>Oracle&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x304C;&#x5FC5;&#x8981;  </p>
+<pre><code>$ unzip linuxx64_12201_database.zip
+# mv database /opt
+$ cd /opt/database
+$ ./runInstaller
+Oracle Universal Installer&#x3092;&#x8D77;&#x52D5;&#x4E2D;&#x3067;&#x3059;...
+
+&#x4E00;&#x6642;&#x9818;&#x57DF;&#x306E;&#x78BA;&#x8A8D;&#x4E2D;: 500MB&#x3092;&#x8D85;&#x3048;&#x3066;&#x3044;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;.   &#x5B9F;&#x969B; 66141MB    &#x554F;&#x984C;&#x306A;&#x3057;
+&#x30B9;&#x30EF;&#x30C3;&#x30D7;&#x9818;&#x57DF;&#x306E;&#x78BA;&#x8A8D;&#x4E2D;: 150MB&#x3092;&#x8D85;&#x3048;&#x3066;&#x3044;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;.   &#x5B9F;&#x969B; 3815MB    &#x554F;&#x984C;&#x306A;&#x3057;
+&#x30E2;&#x30CB;&#x30BF;&#x30FC;&#x306E;&#x78BA;&#x8A8D;&#x4E2D;: &#x5C11;&#x306A;&#x304F;&#x3068;&#x3082;256&#x8272;&#x8868;&#x793A;&#x3059;&#x308B;&#x3088;&#x3046;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;.    &#x5B9F;&#x969B; 16777216    &#x554F;&#x984C;&#x306A;&#x3057;
+Oracle Universal Installer&#x306E;&#x8D77;&#x52D5;&#x3092;&#x6E96;&#x5099;&#x4E2D; /tmp/OraInstall2018-03-20_09-14-48PM. &#x304A;&#x5F85;&#x3061;&#x304F;&#x3060;&#x3055;&#x3044;...
+</code></pre><p><strong>&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;&#x306E;&#x69CB;&#x6210;</strong>  </p>
+<p><img src="images/oracle_database_12cr2_install01.png" width="50%">  </p>
+<p><strong>&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;</strong><br>&#x3053;&#x3053;&#x3067;&#x306F;&#x300C;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x30FB;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x300D;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;DB&#x306E;&#x4F5C;&#x6210;&#x306F;&#x5225;&#x9014;&#x5F8C;&#x3067;&#x884C;&#x3046;  </p>
+<p><img src="images/oracle_database_12cr2_install02.png" width="50%">  </p>
+<p><strong>&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x9078;&#x629E;</strong><br>&#x7528;&#x9014;&#x306B;&#x5FDC;&#x3058;&#x3066;&#x9078;&#x629E;  </p>
+<p><img src="images/oracle_database_12cr2_install03.png" width="50%">  </p>
+<p><strong>&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x30FB;&#x30A8;&#x30C7;&#x30A3;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x9078;&#x629E;</strong><br>&#x7528;&#x9014;&#x306B;&#x5FDC;&#x3058;&#x3066;&#x9078;&#x629E;  </p>
+<p><img src="images/oracle_database_12cr2_install04.png" width="50%">  </p>
+<p><strong>&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x5834;&#x6240;&#x306E;&#x6307;&#x5B9A;</strong>  </p>
+<ul>
+<li>Oracle&#x30D9;&#x30FC;&#x30B9;  </li>
+</ul>
+<p>Oracle12c&#x304B;&#x3089;Oracle&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x69CB;&#x6210;&#x304C;&#x6574;&#x7406;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;<br>Oracle&#x30D9;&#x30FC;&#x30B9;&#x306F;&#x5168;&#x3066;&#x306E;Oracle&#x88FD;&#x54C1;&#x306B;&#x3066;&#x4F7F;&#x7528;&#x3055;&#x308C;&#x308B;&#x305F;&#x3081;t&#x9069;&#x5F53;&#x306B;&#x8003;&#x3048;&#x306A;&#x3044;  </p>
+<p><code>/opt/oracle/data/</code></p>
+<p>Oracle&#x30D9;&#x30FC;&#x30B9;&#x306F;<code>oracle</code>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x6A29;&#x9650;&#x3067;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x304C;&#x3067;&#x304D;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;  </p>
+<ul>
+<li>&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x306E;&#x5834;&#x6240;  </li>
+</ul>
+<p>Oracle&#x30D9;&#x30FC;&#x30B9;&#x914D;&#x4E0B;&#x306B;&#x4F5C;&#x6210;&#x3059;&#x308B;  </p>
+<p><code>/opt/oracle/data/product/12.2.0/dnhome_1</code></p>
+<p><img src="images/oracle_database_12cr2_install05.png" width="50%">  </p>
+<p><strong>&#x30A4;&#x30F3;&#x30D9;&#x30F3;&#x30C8;&#x30EA;&#x306E;&#x4F5C;&#x6210;</strong><br>Oracle&#x88FD;&#x54C1;&#x306E;&#x30A4;&#x30F3;&#x30D9;&#x30F3;&#x30C8;&#x30EA;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3068;&#x7BA1;&#x7406;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x3092;&#x6307;&#x5B9A;<br>Oracle&#x30D9;&#x30FC;&#x30B9;&#x914D;&#x4E0B;<br>&#x3053;&#x3061;&#x3089;&#x3082;Oracle&#x88FD;&#x54C1;&#x5171;&#x901A;&#x3067;&#x5229;&#x7528;&#x3055;&#x308C;&#x308B;  </p>
+<p><code>/opt/oracle/oraInventory</code><br><code>oinstall</code>  </p>
+<p><img src="images/oracle_database_12cr2_install06.png" width="50%">  </p>
+<p><strong>&#x6A29;&#x9650;&#x3042;&#x308B;&#x30AA;&#x30DA;&#x30EC;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x30FB;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x30FB;&#x30B0;&#x30EB;&#x30FC;&#x30D7;</strong><br>OracleDB&#x306B;&#x5BFE;&#x3057;&#x3066;&#x7BA1;&#x7406;&#x8005;&#x6A29;&#x9650;&#x3092;&#x5F97;&#x3089;&#x308C;&#x308B;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x6307;&#x5B9A;  </p>
+<p><img src="images/oracle_database_12cr2_install07.png" width="50%">  </p>
+<p><strong>&#x524D;&#x63D0;&#x6761;&#x4EF6;&#x306E;&#x30C1;&#x30A7;&#x30C3;&#x30AF;</strong>  </p>
+<p><img src="images/oracle_database_12cr2_install08.png" width="50%">  </p>
+<p><strong>&#x30B5;&#x30DE;&#x30EA;&#x30FC;</strong>  </p>
+<p><img src="images/oracle_database_12cr2_install09.png" width="50%">  </p>
+<p><strong>&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x306E;&#x5B9F;&#x884C;</strong>  </p>
+<p><img src="images/oracle_database_12cr2_install10.png" width="50%">  </p>
+<p>root&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306B;&#x3066;&#x5B9F;&#x884C;  </p>
+<pre><code># /opt/oracle/oraInventory/orainstRoot.sh
+&#x6A29;&#x9650;&#x3092;&#x5909;&#x66F4;&#x4E2D; /opt/oracle/oraInventory.
+&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x8AAD;&#x53D6;&#x308A;/&#x66F8;&#x8FBC;&#x307F;&#x6A29;&#x9650;&#x3092;&#x8FFD;&#x52A0;&#x4E2D;&#x3002;
+&#x5168;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x8AAD;&#x53D6;&#x308A;/&#x66F8;&#x8FBC;&#x307F;/&#x5B9F;&#x884C;&#x6A29;&#x9650;&#x3092;&#x524A;&#x9664;&#x4E2D;&#x3002;
+
+&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x540D;&#x306E;&#x5909;&#x66F4; /opt/oracle/oraInventory &#x5B9B;&#x5148; oinstall.
+&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x306E;&#x5B9F;&#x884C;&#x304C;&#x5B8C;&#x4E86;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;
+</code></pre><pre><code># /opt/oracle/data/product/12.2.0/dbhome_1/root.sh
+Performing root user operation.
+
+The following environment variables are set as:
+    ORACLE_OWNER= oracle
+    ORACLE_HOME=  /opt/oracle/data/product/12.2.0/dbhome_1
+
+Enter the full pathname of the local bin directory: [/usr/local/bin]:
+   Copying dbhome to /usr/local/bin ...
+   Copying oraenv to /usr/local/bin ...
+   Copying coraenv to /usr/local/bin ...
+
+
+Creating /etc/oratab file...
+Entries will be added to the /etc/oratab file as needed by
+Database Configuration Assistant when a database is created
+Finished running generic part of root script.
+Now product-specific root actions will be performed.
+Do you want to setup Oracle Trace File Analyzer (TFA) now ? yes|[no] :
+yes
+Installing Oracle Trace File Analyzer (TFA).
+Log File: /opt/oracle/data/product/12.2.0/dbhome_1/install/root_shmdodb-01_2018-03-20_22-16-01-239144330.log
+Finished installing Oracle Trace File Analyzer (TFA)
+</code></pre><ul>
+<li>TFA<br><a href="https://docs.oracle.com/cd/E82638_01/ATNMS/understanding-tfa.htm" target="_blank">https://docs.oracle.com/cd/E82638_01/ATNMS/understanding-tfa.htm</a>  </li>
+</ul>
+<p><strong>&#x7D42;&#x4E86;</strong>  </p>
+<p><img src="images/oracle_database_12cr2_install11.png" width="50%">  </p>
+<p>oracle&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x30D7;&#x30ED;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x4EE5;&#x4E0B;&#x3092;&#x5B9A;&#x7FA9;&#x3057;&#x3066;&#x304A;&#x304F;&#x3068;&#x4FBF;&#x5229;  </p>
+<pre><code>$ vim .bash_profile
+# Oracle Add
+umask 022
+ORACLE_BASE=/opt/oracle/data
+ORACLE_HOME=$ORACLE_BASE/product/12.2.0/dbhome_1
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin:$ORACLE_HOME/bin
+
+export PATH
+</code></pre><h2 id="dbca&#x306B;&#x3088;&#x308B;db&#x4F5C;&#x6210;">DBCA&#x306B;&#x3088;&#x308B;DB&#x4F5C;&#x6210;</h2>
+<p><a href="http://www.oracle.com/technetwork/jp/database/enterprise-edition/documentation/sidb12201-inst-linux-x64-ja-v10-3627443-ja.pdf" target="_blank">http://www.oracle.com/technetwork/jp/database/enterprise-edition/documentation/sidb12201-inst-linux-x64-ja-v10-3627443-ja.pdf</a>  </p>
+<p><strong>&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x64CD;&#x4F5C;</strong>  </p>
+<pre><code>$ dbca
+</code></pre><p><img src="images/oracle_database_12cr2_dbca01.png" width="50%">  </p>
+<p><strong>&#x4F5C;&#x6210;&#x30E2;&#x30FC;&#x30C9;</strong><br>&#x62E1;&#x5F35;&#x69CB;&#x6210;&#x3092;&#x9078;&#x629E;  </p>
+<p><img src="images/oracle_database_12cr2_dbca02.png" width="50%">  </p>
+<p><strong>&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x30FB;&#x30BF;&#x30A4;&#x30D7;</strong>  </p>
+<ul>
+<li>&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x30BF;&#x30A4;&#x30D7;<br>Oracle&#x5358;&#x4E00;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;</li>
+<li>&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;  </li>
+</ul>
+<p><img src="images/oracle_database_12cr2_dbca03.png" width="50%">  </p>
+<p><strong>&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x306E;&#x8B58;&#x5225;</strong>  </p>
+<p><img src="images/oracle_database_12cr2_dbca04.png" width="50%">  </p>
+<p><strong>&#x8A18;&#x61B6;&#x57DF;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;</strong>  </p>
+<p><img src="images/oracle_database_12cr2_dbca05.png" width="50%">  </p>
+<p><strong>&#x9AD8;&#x901F;&#x30EA;&#x30AB;&#x30D0;&#x30EA;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;</strong>  </p>
+<p><img src="images/oracle_database_12cr2_dbca06.png" width="50%">  </p>
+<p><strong>&#x30CD;&#x30C3;&#x30C8;&#x30EF;&#x30FC;&#x30AF;&#x69CB;&#x6210;</strong>  </p>
+<ul>
+<li>&#x30EA;&#x30B9;&#x30CA;&#x30FC;&#x540D;<br>LISTENER</li>
+<li>&#x30DD;&#x30FC;&#x30C8;<br>1521</li>
+</ul>
+<p><img src="images/oracle_database_12cr2_dbca07.png" width="50%">  </p>
+<p><strong>&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;</strong>  </p>
+<p><img src="images/oracle_database_12cr2_dbca08.png" width="50%">  </p>
+<p><strong>&#x69CB;&#x6210;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;</strong>  </p>
+<p>&#x81EA;&#x52D5;&#x7BA1;&#x7406;&#x30E1;&#x30E2;&#x30EA;&#x3067;&#x4E0A;&#x9650;&#x3092;1048MB&#xFF08;/dev/shm&#x30B5;&#x30A4;&#x30BA;&#x306B;&#x4F9D;&#x5B58;&#xFF09;  </p>
+<p><img src="images/oracle_database_12cr2_dbca09.png" width="50%">  </p>
+<p>&#x6700;&#x5927;&#x63A5;&#x7D9A;&#x6570; 300</p>
+<p><img src="images/oracle_database_12cr2_dbca10.png" width="50%">  </p>
+<p>&#x30AD;&#x30E3;&#x30E9;&#x30BB;&#x30C3;&#x30C8;&#x3092; AL32UTF8</p>
+<p><img src="images/oracle_database_12cr2_dbca11.png" width="50%">  </p>
+<p>&#x5C02;&#x7528;&#x30E2;&#x30FC;&#x30C9;</p>
+<p><img src="images/oracle_database_12cr2_dbca12.png" width="50%">  </p>
+<p>&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30B9;&#x30AD;&#x30FC;&#x30DE;&#x306F;&#x3044;&#x3089;&#x306A;&#x3044;&#x3093;&#x3058;&#x3083;&#x306D;&#xFF1F;</p>
+<p><img src="images/oracle_database_12cr2_dbca13.png" width="50%">  </p>
+<p><strong>&#x7BA1;&#x7406;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;</strong>  </p>
+<p>EnterpriseManager 5500 &#x30DD;&#x30FC;&#x30C8;  </p>
+<p><img src="images/oracle_database_12cr2_dbca14.png" width="50%">  </p>
+<p><strong>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x8CC7;&#x683C;&#x60C5;&#x5831;</strong><br>&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x7BA1;&#x7406;&#x8005;&#x60C5;&#x5831;  </p>
+<p>sys/<strong><strong><br>system/</strong></strong>  </p>
+<p><img src="images/oracle_database_12cr2_dbca15.png" width="50%">  </p>
+<p><strong>&#x4F5C;&#x6210;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;</strong></p>
+<p><img src="images/oracle_database_12cr2_dbca16.png" width="50%">  </p>
+<p>&#x8A18;&#x61B6;&#x9818;&#x57DF;&#x306E;&#x30AB;&#x30B9;&#x30BF;&#x30DE;&#x30A4;&#x30BA;  </p>
+<p><img src="images/oracle_database_12cr2_dbca17.png" width="50%">  </p>
+<p><strong>&#x7D42;&#x4E86;</strong>  </p>
+<p><img src="images/oracle_database_12cr2_dbca18.png" width="50%">  </p>
+<h2 id="&#x63A5;&#x7D9A;">&#x63A5;&#x7D9A;</h2>
+<p>&#x30EA;&#x30B9;&#x30CA;&#x30FC;&#x3078;&#x306E;&#x758E;&#x901A;&#x78BA;&#x8A8D;  </p>
+<pre><code>$ tnsping shmdodb
+$ lsnrctl status
+</code></pre><p>&#x74B0;&#x5883;&#x5909;&#x6570;&#x306E;&#x8A2D;&#x5B9A;  </p>
+<pre><code>$ export ORACLE_SID=shmdodb
+$ export ORACLE_HOME=/opt/oracle/data/product/12.2.0/dbhome_1
+$ /opt/oracle/data/product/12.2.0/dbhome_1/bin/sqlplus system/***** as sysdba
+$ export NLS_LANG=Japanese_Japan.AL32UTF8
+$ sqlplus sys/**** as sysdba
+</code></pre><p>&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x8D77;&#x52D5;  </p>
+<pre><code class="lang-sql">startup
+</code></pre>
+<p>&#x203B;&#x591A;&#x5206;&#x8D77;&#x52D5;&#x3057;&#x3066;&#x308B;  </p>
+<h2 id="&#x8868;&#x9818;&#x57DF;&#x306E;&#x4F5C;&#x6210;">&#x8868;&#x9818;&#x57DF;&#x306E;&#x4F5C;&#x6210;</h2>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">BIGFILE</span> <span class="hljs-keyword">TABLESPACE</span> SCHEME1TBS <span class="hljs-keyword">DATAFILE</span> <span class="hljs-string">&apos;/opt/oracle/data/oradata/SHMDODB/datafile/shmdodb_scheme1tbs.dbf&apos;</span> <span class="hljs-keyword">SIZE</span> <span class="hljs-number">40</span>G <span class="hljs-keyword">AUTOEXTEND</span> <span class="hljs-keyword">ON</span> <span class="hljs-keyword">NEXT</span> <span class="hljs-number">10</span>M <span class="hljs-keyword">MAXSIZE</span> <span class="hljs-keyword">UNLIMITED</span>;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLESPACE</span> SCHEME2TBS <span class="hljs-keyword">DATAFILE</span> <span class="hljs-string">&apos;/opt/oracle/data/oradata/SHMDODB/datafile/shmdodb_scheme2tbs.dbf&apos;</span> <span class="hljs-keyword">SIZE</span> <span class="hljs-number">5</span>G <span class="hljs-keyword">AUTOEXTEND</span> <span class="hljs-keyword">ON</span> <span class="hljs-keyword">NEXT</span> <span class="hljs-number">10</span>M <span class="hljs-keyword">MAXSIZE</span> <span class="hljs-keyword">UNLIMITED</span>;
+</code></pre>
+<p>&#x6A19;&#x6E96;&#x306E;&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x30B5;&#x30A4;&#x30BA;&#x6570;&#x3092;&#x8D85;&#x3048;&#x308B;&#x30B5;&#x30A4;&#x30BA;&#x306E;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3092;&#x4F5C;&#x308B;&#x5834;&#x5408;&#x306F;<code>bigfile</code>&#x3067;&#x4F5C;&#x308B;  </p>
+<blockquote>
+<p>ORA-01144:&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x30FB;&#x30B5;&#x30A4;&#x30BA;(5242880&#x30D6;&#x30ED;&#x30C3;&#x30AF;)&#x304C;&#x6700;&#x5927;&#x5024;4194303&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x3092;&#x8D85;&#x3048;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;  </p>
+</blockquote>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> DBA_DATA_FILES;
+</code></pre>
+<h2 id="&#x30B9;&#x30AD;&#x30FC;&#x30DE;&#xFF08;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#xFF09;&#x306E;&#x4F5C;&#x6210;">&#x30B9;&#x30AD;&#x30FC;&#x30DE;&#xFF08;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#xFF09;&#x306E;&#x4F5C;&#x6210;</h2>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">USER</span> SCHEME1 <span class="hljs-keyword">IDENTIFIED</span> <span class="hljs-keyword">BY</span> <span class="hljs-string">&quot;scheme1tbs&quot;</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">TABLESPACE</span> SHMTBS <span class="hljs-keyword">TEMPORARY</span> <span class="hljs-keyword">TABLESPACE</span> TEMP;
+
+&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x3002;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">USER</span> SCHEME2 <span class="hljs-keyword">IDENTIFIED</span> <span class="hljs-keyword">BY</span> <span class="hljs-string">&quot;scheme2tbs&quot;</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">TABLESPACE</span> CONTBS <span class="hljs-keyword">TEMPORARY</span> <span class="hljs-keyword">TABLESPACE</span> TEMP;
+
+&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x3002;
+</code></pre>
+<p>&#x78BA;&#x8A8D;  </p>
+<pre><code class="lang-sql"><span class="hljs-keyword">select</span> username,default_tablespace,temporary_tablespace <span class="hljs-keyword">from</span> dba_users;
+</code></pre>
+<h2 id="&#x305D;&#x306E;&#x4ED6;&#x8ABF;&#x6574;">&#x305D;&#x306E;&#x4ED6;&#x8ABF;&#x6574;</h2>
+<ul>
+<li>&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x6709;&#x52B9;&#x671F;&#x9650;&#x306E;&#x89E3;&#x9664;  </li>
+</ul>
+<pre><code class="lang-sql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> dba_profiles <span class="hljs-keyword">where</span> resource_name = <span class="hljs-string">&apos;PASSWORD_LIFE_TIME&apos;</span>;
+<span class="hljs-keyword">alter</span> profile <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">limit</span> PASSWORD_LIFE_TIME <span class="hljs-keyword">unlimited</span>;
+<span class="hljs-keyword">alter</span> profile <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">limit</span> <span class="hljs-keyword">PASSWORD_GRACE_TIME</span> <span class="hljs-keyword">unlimited</span>;
+</code></pre>
+<ul>
+<li>&#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;&#x30ED;&#x30B0;<br>&#x958B;&#x767A;&#x74B0;&#x5883;&#x306F;&#x505C;&#x6B62;&#x3059;&#x308B;  </li>
+</ul>
+<pre><code class="lang-sql">ARCHIVE LOG LIST;
+
+&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x30FB;&#x30ED;&#x30B0;&#x30FB;&#x30E2;&#x30FC;&#x30C9;     &#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;&#x30FB;&#x30E2;&#x30FC;&#x30C9;
+&#x81EA;&#x52D5;&#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;                 &#x6709;&#x52B9;
+&#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;&#x5148;                    USE_DB_RECOVERY_FILE_DEST
+&#x6700;&#x3082;&#x53E4;&#x3044;&#x30AA;&#x30F3;&#x30E9;&#x30A4;&#x30F3;&#x30FB;&#x30ED;&#x30B0;&#x9806;&#x5E8F;   15
+&#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;&#x3059;&#x308B;&#x6B21;&#x306E;&#x30ED;&#x30B0;&#x9806;&#x5E8F;    17
+&#x73FE;&#x884C;&#x306E;&#x30ED;&#x30B0;&#x9806;&#x5E8F;               17
+
+SHUTDOWN IMMEDIATE;
+STARTUP MOUNT;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">DATABASE</span> <span class="hljs-keyword">NOARCHIVELOG</span>;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">DATABASE</span> <span class="hljs-keyword">OPEN</span>;
+</code></pre>
+<h2 id="&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x505C;&#x6B62;">&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x505C;&#x6B62;</h2>
+<pre><code class="lang-sql">SHUTDOWN IMMEDIATE
+</code></pre>
+<pre><code>$ lsnrctl stop
+</code></pre><h2 id="&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x6A29;&#x9650;&#x306E;&#x8FFD;&#x52A0;">&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x6A29;&#x9650;&#x306E;&#x8FFD;&#x52A0;</h2>
+<p>&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x6A29;&#x9650;&#x306E;&#x78BA;&#x8A8D;  </p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> PRIVILEGE <span class="hljs-keyword">FROM</span> SESSION_PRIVS <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> PRIVILEGE;
+</code></pre>
+<p>&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x6A29;&#x9650;&#x3092;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306B;&#x8FFD;&#x52A0;&#x3059;&#x308B;  </p>
+<pre><code class="lang-sql"><span class="hljs-keyword">GRANT</span> <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> <span class="hljs-keyword">LINK</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">PROCEDURE</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">SEQUENCE</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">SESSION</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">SYNONYM</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TRIGGER</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">VIEW</span> <span class="hljs-keyword">TO</span> scheme1;
+<span class="hljs-keyword">GRANT</span> <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> <span class="hljs-keyword">LINK</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">PROCEDURE</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">SEQUENCE</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">SESSION</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">SYNONYM</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TRIGGER</span>, <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">VIEW</span> <span class="hljs-keyword">TO</span> scheme2;
+</code></pre>
+<p>sqlplus&#x3067;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3067;&#x304D;&#x308B;&#x4E8B;&#x3092;&#x78BA;&#x8A8D;  </p>
+<pre><code>$ sqlplus scheme1/*****
+
+SQL*Plus: Release 12.2.0.1.0 Production on &#x6728; 4&#x6708; 5 17:28:28 2018
+
+Copyright (c) 1982, 2016, Oracle.  All rights reserved.
+
+
+
+Oracle Database 12c Standard Edition Release 12.2.0.1.0 - 64bit Production
+&#x306B;&#x63A5;&#x7D9A;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x3002;
+SQL&gt;
+</code></pre><h2 id="&#x8868;&#x9818;&#x57DF;&#x3078;&#x306E;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x6A29;&#x9650;">&#x8868;&#x9818;&#x57DF;&#x3078;&#x306E;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x6A29;&#x9650;</h2>
+<p>&#x8868;&#x9818;&#x57DF;&#x306B;&#x5BFE;&#x3059;&#x308B;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x5236;&#x9650;&#x6307;&#x5B9A;<br>&#x4E0B;&#x8A18;&#x306F;&#x5BFE;&#x8C61;&#x8868;&#x9818;&#x57DF;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x7121;&#x5236;&#x9650;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x6A29;&#x9650;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x3044;&#x308B;&#x3002;  </p>
+<pre><code class="lang-sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">user</span> scheme1 <span class="hljs-keyword">quota</span> <span class="hljs-keyword">unlimited</span> <span class="hljs-keyword">on</span> scheme1tbs;
+<span class="hljs-keyword">alter</span> <span class="hljs-keyword">user</span> scheme2 <span class="hljs-keyword">quota</span> <span class="hljs-keyword">unlimited</span> <span class="hljs-keyword">on</span> scheme2tbs;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Title">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"OracleDataBase12c インストール","level":"1.2","depth":1,"previous":{"title":"Title","level":"1.1","depth":1,"path":"README.md","ref":"./README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"database_12cr2.md","mtime":"2018-07-10T08:39:37.557Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-10T08:40:17.699Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
